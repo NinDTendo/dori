@@ -1,0 +1,22 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "description": "Create a binary sensor which determines if the next day is a day-off or not.",
+        "data": {
+          "calendar_entities": "Calendar(s)",
+          "name": "Name of the sensor"
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "calendar_entities": "[%key:component::NEW_DOMAIN::config::step::user::description%]"
+        }
+      }
+    }
+  }
+}
